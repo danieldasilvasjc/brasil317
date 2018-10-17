@@ -1,0 +1,15 @@
+{
+  "name": "webcrawlerinpe",
+  "version": "1.0.0",
+  "description": "Projeto WebCrawler INPE - Projeto Brasil 317",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel da Silva (daniel_silva_77@hotmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.88.0"
+  }
+}

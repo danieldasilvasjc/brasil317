@@ -1,0 +1,91 @@
+Teste técnico – SOFTWARE
+
+• Escolha uma das linguagens: Python ou Node.js;
+
+• Escolha uma página de qualquer site governamental;
+
+• Desenvolva um algoritmo para obter os dados desta página (quanto mais rica de informações for a página, mais impressionante será seu scraping). Podem ser dados de uma tabela, uma lista, uma lista de links ou alguma outra informação relevante;
+
+• Armazene os dados desta página em um documento do MongoDB na nuvem (recomendamos o Atlas, que é gratuito para testes: https://cloud.mongodb.com/);
+
+• Crie um repositório no GitHub com qualquer nome, suba seu código lá e documente no README todos os procedimentos que você acha necessário para nós usarmos seu algoritmo (versões utilizadas, comandos necessários, etc) e nos envie.
+
+
+*****************************************************************************
+
+Web Scrapping - Técninca de extração de recuperar informações de websites
+
+Irei utilizar um site governamental para realizar a Raspagem de Dados, como foi pedido.
+
+A url que vai ser utilizada para o Scrapping de dados segue abaixo:
+
+    http://www.inpe.br/noticias/
+
+
+As tecnologias utilizadas nesse pequeno projeto, são:
+
+    * Node.js é uma plataforma SINGLE-THREAD, diferentes de outras linguagens   como: Java ou .NET 
+    
+    * Request - Módulo utilizado para realizar as chamadas HTTP
+    
+    * Cheerio - Utilizada para acessar o DOM e extrair os dados
+
+
+Primeiro Pasoo:
+
+    CONFIGURAÇÃO
+
+        Cria-se o seguinte diretório:
+
+            C:\projetoNode\webCrawlerInpe
+            
+
+        Não irei mostrar como criar o arquivo: 'package.json', pois irei disponibilizá-lo.
+        
+        1) Porém, caso queira criar o arquivo 'package.json' pelo console vá até o o seguinte diretorio abaixo e seguinte o seginte comando:
+
+             C:\projetoNode\webCrawlerInpe> npm init
+
+        
+        2) Quando o assistente, chegar ao fim o arquivo PACKAGE.JSON será criado.
+
+        
+        3) Depois que o arquivo PACKAGE.JSON for criado, vamos editá-lo ajustando as configurações iniciais.
+
+        
+        4) Após difinirmos as dependências necessárias para o desenvolvimento do projeto, é necessário realizar a instalação das mesmas.
+
+                "cheerio": "^1.0.0-rc.2",
+                "request": "^2.88.0"
+
+        5) Ralizamos a instalação no console utilizando o seguinte comando:
+
+                1)  npm info express version
+
+                2)  npm i -g npm-check-updates
+    
+                3)  npm-check-updates -u
+    
+                4)  npm install 
+
+        6)  Após executarmos o comando acima, todas as dependências serão instaladas e junto com elas um diretório chamado 'node_modules' será criado.
+
+
+        7) Vamos criar o arquivo responsável pela raspagem dos dados.
+
+            spider-inpe-noticias
+
+        8) Por fim, realizamos a raspagem dos dados
+
+           Vamos até o console e digitamos o comando abaixo:
+        
+                C:\projetoNode\webCrawlerInpe\node spider-inpe-noticias.js
+
+
+            Após executar o arquivo acima, um novo arquivo vai ser criado  com conteúdo da raspagem do site governamental.
+
+
+        OBSERVAÇÃO: Não consegui realizar por completo o que foi pedido, porém cheguei até aqui. Falta a parte relacionada ao banco de dados, o MongoDB.
+
+        
+
